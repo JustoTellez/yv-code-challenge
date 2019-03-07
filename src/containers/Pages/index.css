@@ -1,0 +1,58 @@
+.page{
+    flex:0 0 50%;
+    background-color:#9d7ec5;
+    position: relative;
+}
+
+
+.page .floating-container{
+    position: absolute;
+    background-color: #fff;
+    padding: 30px;
+    max-width: 360px;
+    width:80%;
+    top: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top:50%;
+    max-height:450px;
+    box-shadow: 0px 0px 36px -9px rgba(0,0,0,0.75);
+}
+
+.page h2{
+    text-align: center;
+    font-size:1.2em;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.page .avatar{
+    width:100%;
+    margin:0.5em 0;
+}
+
+.signup-name{
+    margin-bottom:1em;
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        background-color:#9d7ec5;
+    }
+
+    .page{
+        flex:100%;
+        position: relative;
+    }
+
+    .page .floating-container{
+        position: relative;
+        background-color: #fff;
+        padding: 30px;
+        margin-top:-100px;
+        box-shadow: 0px 0px 36px -9px rgba(0,0,0,0.75);
+    }
+
+}

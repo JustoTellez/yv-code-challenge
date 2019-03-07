@@ -1,0 +1,15 @@
+{
+  "name": "youvisit-code-challenge-api",
+  "version": "1.0.0",
+  "description": "Api for code-challenge",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

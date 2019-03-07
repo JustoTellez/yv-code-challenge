@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:600,700,800');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    color:silver;
+    /* color: #3b455a; */
+    font-size: 3em;
+}
+
+#youvisit-app .container{
+    flex:2;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#youvisit-app .container .hero{
+    flex:0 0 50%;
+    height:100vh;
+    position: relative;
+}
+
+.hero{
+    background-color:#fff;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero .hero-container{
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    left:50%;
+    top: 50%;
+    padding:30px;
+    width:100%;
+}
+
+.hero .hero-container h2{
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    font-family: 'Lato',sans-serif;
+    color: #fff;
+    background-color: #6dc7d5;
+    border: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    margin:5px 0;
+    font-size:1em;
+    transition: 0.3s;
+}
+
+.btn-primary:hover{
+    opacity:0.7;
+}
+
+@media only screen and (max-width: 700px) {
+    #youvisit-app .container .hero{
+        flex:100%;
+        position: relative;
+        height:auto;
+    }
+
+    .hero .hero-container{
+        position: relative;
+        background-color: #fff;
+        padding: 10px;
+    }
+}
